@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+.DogSection {
+  position: relative;
+  width: 100%;
+  max-width: 1500px;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;   /* move content left */
+  justify-content: center;
+  color: #e78d17;
+  text-align: left;        
+  font-family: 'Gloria Hallelujah', cursive;
+    justify-content: space-around;
+     flex-wrap: wrap;
+      padding: 40px 20px;
+}
+
+.DogHomePage-DogPhoto {
+  margin-top: 60px;
+  height: 300px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  margin: 40px 0px 0px;
+}
+
+
+/* Dog photo */
+.DogHomePage-DogPhoto {
+  width: 45%;
+  max-width: 500px;
+  border-radius: 20px;
+}
+
+/* Text content */
+.Dog-content {
+  width: 50%;
+  text-align: left;
+  color: #333;
+}
+
+.Dog-content h1 {
+  font-size: 3rem; /* change this for bigger or smaller title */
+  color: #ff914d; /* your brand color maybe */
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.Dog-content p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .DogSection {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .DogHomePage-DogPhoto {
+    width: 80%;
+  }
+
+  .Dog-content {
+    width: 90%;
+  }
+
+  .Dog-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .Dog-content p {
+    font-size: 1rem;
+  }
+}

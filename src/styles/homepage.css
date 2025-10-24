@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff; /* optional, keeps things clean */
+}
+
+.home-page {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  flex-wrap: wrap; /* ensures content doesn’t overflow */
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 1024px) {
+  .home-page {
+    padding: 15px;
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 768px) {
+  body {
+    font-size: 0.95rem; /* scale text slightly down */
+  }
+
+  .home-page {
+    flex-direction: column; /* stack elements vertically */
+    align-items: center;
+    padding: 10px;
+  }
+}
+
+/* Extra small screens (tiny phones) */
+@media (max-width: 480px) {
+  body {
+    font-size: 0.9rem;
+  }
+
+  .home-page {
+    padding: 5px;
+  }
+}
