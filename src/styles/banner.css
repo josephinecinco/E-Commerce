@@ -1,0 +1,120 @@
+/* Import handwritten font */
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+/* =========================
+   BANNER BASE STYLE
+   ========================= */
+.banner {
+  position: relative;
+  width: 100%;
+  max-width: 1500px;
+  background-image: url('../assets/Banner.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 40px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;   /* move content left */
+  justify-content: center;
+  color: #ffffff;
+  text-align: left;          /* align text left */
+  padding-left: 200px;        /* give breathing space from edge */
+  margin: 0 auto;
+  overflow: hidden;
+  z-index: 1;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+.banner h1 {
+  font-size: 4rem;
+  margin-bottom: 5px;
+  color: #fff;
+  margin-top: auto;
+}
+
+/* Optional: style your subtitle if you have one */
+.banner p {
+  font-size: 1rem;
+
+  color: #f5f5f5;
+}
+
+/* =========================
+   RESPONSIVE QUERIES
+   ========================= */
+
+   @media (max-width: 1024px) {
+  .banner h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .banner h1 {
+    font-size: 1.7rem;
+  }
+}
+
+
+/* Tablets and small laptops */
+@media (max-width: 1024px) {
+  .banner {
+    height: 420px;
+    border-radius: 30px;
+    padding-left: 60px;
+  }
+}
+
+/* Medium devices (tablets, landscape phones) */
+@media (max-width: 768px) {
+  .banner {
+    height: 350px;
+    border-radius: 25px;
+    padding-left: 40px;
+  }
+
+  .banner-content {
+    font-size: 0.95rem;
+    padding-right: 10px;
+  }
+}
+
+/* Small devices (portrait phones) */
+@media (max-width: 480px) {
+  .banner {
+    height: 250px;
+    border-radius: 20px;
+    padding-left: 25px;
+  }
+
+  .banner-content {
+    font-size: 0.85rem;
+    padding-right: 8px;
+  }
+}
+
+/* Very small devices (tiny screens) */
+@media (max-width: 320px) {
+  .banner {
+    height: 200px;
+    border-radius: 15px;
+    padding-left: 15px;
+  }
+
+  .banner-content {
+    font-size: 0.8rem;
+  }
+}

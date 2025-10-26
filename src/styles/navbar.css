@@ -1,0 +1,121 @@
+.navbar-container {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+  z-index: 10;
+}
+
+
+.navbar {
+  display: flex;
+  gap: 30px;
+  background: transparent;
+  font-weight: 600;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ffd28f;
+}
+
+/* ======= Responsive Adjustments ======= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .navbar-container {
+    top: 30px;
+    right: 50px;
+    gap: 20px;
+  }
+
+  .navbar {
+    gap: 25px;
+  }
+
+  .navbar a {
+    font-size: 0.9rem;
+  }
+}
+
+/* Phones */
+@media (max-width: 768px) {
+  .navbar-container {
+    top: 20px;
+    right: 20px;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 10px;
+  }
+
+  .navbar {
+    gap: 20px;
+  }
+
+  .navbar a {
+    font-size: 0.8rem;
+  }
+}
+
+/* Tiny phones */
+@media (max-width: 480px) {
+  .navbar-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 0;
+    gap: 3px;
+  }
+
+  .navbar {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .navbar a {
+    font-size: 0.9rem;
+  }
+}
+
+.navbar-logo {
+  margin-top: 20px;
+  height: 60px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* make it responsive */
+@media (max-width: 1024px) {
+  .navbar-logo {
+    height: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-logo {
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-logo {
+    height: 35px;
+    width: auto;
+  }
+}
