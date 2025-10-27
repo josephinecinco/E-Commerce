@@ -1,20 +1,24 @@
 /* =========================
-   SEARCH BAR BASE STYLE
+   SEARCH BAR STYLE
    ========================= */
 .search-bar {
+  position: absolute;          /* float it above everything */
+  top: 20px;                   /* adjust to match navbar’s vertical alignment */
+  left: 50%;                   /* center horizontally */
+  transform: translateX(-50%);
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 6px;
   background: #fff;
   border-radius: 30px;
-  padding: 8px 12px;
+  padding: 8px 14px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
   width: 400px;
-  max-width: 100%;
-  transition: width 0.3s ease;
-  margin-top: 20px;
+  max-width: 90%;
+  z-index: 1500;               /* above banner but not above navbar dropdowns */
 }
 
+/* input and button styles */
 .search-bar input {
   flex: 1;
   border: none;
@@ -40,22 +44,20 @@
   background: #a06000;
 }
 
-
 /* =========================
    RESPONSIVE QUERIES
    ========================= */
-
-/* Laptops and small desktops */
 @media (max-width: 1024px) {
   .search-bar {
-    width: 250px;
+    width: 320px;
+    top: 18px;
   }
 }
 
-/* Tablets */
 @media (max-width: 768px) {
   .search-bar {
-    width: 100px;
+    width: 260px;
+    top: 16px;
     padding: 6px 10px;
   }
 
@@ -65,15 +67,14 @@
 
   .search-bar button {
     padding: 5px 12px;
-    font-size: 0.5rem;
+    font-size: 0.8rem;
   }
 }
 
-/* Phones */
 @media (max-width: 480px) {
   .search-bar {
-    width: 150px;
-    padding: 4px 8px;
+    width: 200px;
+    top: 14px;
   }
 
   .search-bar input {
@@ -81,24 +82,7 @@
   }
 
   .search-bar button {
-    padding: 4px 8px;
-    font-size: 0.8rem;
-  }
-}
-
-/* Very small screens (tiny phones) */
-@media (max-width: 320px) {
-  .search-bar {
-    width: 100px;
-    padding: 3px 6px;
-  }
-
-  .search-bar input {
+    padding: 4px 10px;
     font-size: 0.75rem;
-  }
-
-  .search-bar button {
-    padding: 3px 6px;
-    font-size: 0.7rem;
   }
 }

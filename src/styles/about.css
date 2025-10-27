@@ -1,0 +1,72 @@
+/* AboutUs.css */
+
+.about-us {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  padding-top: 200px;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap; /* for responsiveness */
+}
+
+.about-us img {
+  width: 400px; /* adjust as needed */
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.about-us div {
+  max-width: 600px;
+}
+
+.about-us h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about-us p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* AboutUs.css - Table Styling */
+
+/* Container to center the table */
+.about-table-container {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+/* Single-column orange table */
+.about-table {
+  width: 80%;
+  background-color: #FF9B45;
+  text-align: center;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden; /* ensures rounded corners apply */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Table cells padding and text color */
+.about-table td {
+  padding: 25px;
+  color: white;
+}
+
+/* Section headings inside table */
+.about-table h2 {
+  margin-bottom: 10px;
+}
+
+/* Paragraph spacing */
+.about-table p {
+  margin: 5px 0;
+}
+

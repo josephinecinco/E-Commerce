@@ -1,0 +1,109 @@
+.featured-products {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+/* Make the products line up horizontally and stay centered */
+.horizontal-scroll {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 30px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 20px;
+}
+
+/* Product cards */
+.product-card {
+  background: #fafafa;
+  border-radius: 15px;
+  padding: 20px;
+  min-width: 250px;
+  max-width: 280px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  flex: 0 0 auto;
+  text-align: left;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.product-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.product-card h4 {
+  font-size: 1.2rem;
+  margin-top: 15px;
+}
+
+.description {
+  color: #555;
+  font-size: 0.95rem;
+  margin: 8px 0;
+}
+
+.price {
+  font-weight: bold;
+  color: #000;
+}
+
+/* View more button styling */
+.view-more {
+  margin-top: 25px;
+}
+
+.view-more-btn {
+  background-color: #ff914d;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 28px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.view-more-btn:hover {
+  background-color: #ff7b00;
+  transform: scale(1.05);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .horizontal-scroll {
+    justify-content: flex-start;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+  }
+
+  .product-card {
+    min-width: 220px;
+    flex: 0 0 auto;
+  }
+}
+
+@media (max-width: 320px) {
+  .horizontal-scroll {
+    justify-content: flex-start;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+  }
+
+  .product-card {
+    min-width: 110px;
+    flex: 0 0 auto;
+  }
+}
+

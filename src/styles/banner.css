@@ -5,116 +5,97 @@
    BANNER BASE STYLE
    ========================= */
 .banner {
+  height: 700px;
   position: relative;
   width: 100%;
   max-width: 1500px;
+  aspect-ratio: 3 / 1; /* Keeps proportion without locking height */
   background-image: url('../assets/Banner.png');
   background-size: cover;
-  background-position: center;
+  background-position: top; /* Show top part of banner image */
+  background-repeat: no-repeat;
   border-radius: 40px;
-  height: 500px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;   /* move content left */
-  justify-content: center;
+  justify-content: center;   /* vertically center */
+  align-items: center;       /* horizontally center */
   color: #ffffff;
-  text-align: left;          /* align text left */
-  padding-left: 200px;        /* give breathing space from edge */
+  text-align: center;
+  padding: 20px;
   margin: 0 auto;
   overflow: hidden;
-  z-index: 1;
   font-family: 'Gloria Hallelujah', cursive;
+  box-sizing: border-box;
 }
 
+/* Banner heading */
 .banner h1 {
   font-size: 4rem;
-  margin-bottom: 5px;
+  margin-top: 100px;
   color: #fff;
-  margin-top: auto;
 }
 
-/* Optional: style your subtitle if you have one */
+/* Optional subtitle */
 .banner p {
-  font-size: 1rem;
-
+  font-size: 1.2rem;
   color: #f5f5f5;
+  max-width: 700px;
+  margin-bottom: 200px;
 }
 
 /* =========================
    RESPONSIVE QUERIES
    ========================= */
 
-   @media (max-width: 1024px) {
-  .banner h1 {
-    font-size: 3rem;
-  }
-}
 
+/* Tablets */
 @media (max-width: 768px) {
-  .banner h1 {
-    font-size: 2.5rem;
-  }
-}
+  .banner {
+    aspect-ratio: 2.5 / 1;
 
-@media (max-width: 480px) {
+  }
+
   .banner h1 {
     font-size: 2rem;
   }
-}
 
-@media (max-width: 320px) {
-  .banner h1 {
-    font-size: 1.7rem;
+  .banner p {
+    font-size: 0.7rem;
+    max-width: 90%;
   }
 }
 
-
-/* Tablets and small laptops */
-@media (max-width: 1024px) {
-  .banner {
-    height: 420px;
-    border-radius: 30px;
-    padding-left: 60px;
-  }
-}
-
-/* Medium devices (tablets, landscape phones) */
-@media (max-width: 768px) {
-  .banner {
-    height: 350px;
-    border-radius: 25px;
-    padding-left: 40px;
-  }
-
-  .banner-content {
-    font-size: 0.95rem;
-    padding-right: 10px;
-  }
-}
-
-/* Small devices (portrait phones) */
+/* Phones */
 @media (max-width: 480px) {
   .banner {
-    height: 250px;
+    aspect-ratio: 2 / 1;
     border-radius: 20px;
-    padding-left: 25px;
+    padding: 10px;
   }
 
-  .banner-content {
+  .banner h1 {
+    font-size: 2rem;
+  }
+
+  .banner p {
     font-size: 0.85rem;
-    padding-right: 8px;
   }
 }
 
-/* Very small devices (tiny screens) */
+/* Tiny phones */
 @media (max-width: 320px) {
   .banner {
+    aspect-ratio: 1.8 / 1;
     height: 200px;
-    border-radius: 15px;
-    padding-left: 15px;
+    padding: 5px;
   }
 
-  .banner-content {
-    font-size: 0.8rem;
+  .banner h1 {
+    font-size: 1rem;
+    padding-top: 50px;
+  }
+
+  .banner p {
+    font-size: 0.4rem;
   }
 }

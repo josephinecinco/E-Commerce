@@ -1,0 +1,72 @@
+/* Footer.css */
+.footer {
+  background-color: #ff914d;
+  color: rgb(70, 70, 70);
+  text-align: center;
+  padding: 30px 20px;
+  width: 100%;
+  margin-top: 50px;
+  box-sizing: border-box;
+}
+
+.footer-logo {
+  width: 80px;
+  height: auto;
+  margin-bottom: 20px;
+  transition: width 0.3s;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.footer-nav a {
+  color: rgb(107, 107, 107);
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.footer-nav a:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+
+.footer-copy {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer-logo {
+    width: 60px; /* smaller logo */
+  }
+
+  .footer-nav {
+    gap: 15px; /* less spacing for narrow screens */
+  }
+
+  .footer-copy {
+    font-size: 0.8rem; /* smaller text */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-logo {
+    width: 50px;
+  }
+
+  .footer-nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-copy {
+    font-size: 0.75rem;
+  }
+}

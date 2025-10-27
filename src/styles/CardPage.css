@@ -1,0 +1,28 @@
+/* Container for all cards */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-top: 200px;
+  justify-content: center; /* optional: center the cards horizontally */
+  padding-left: 20px;
+}
+
+/* Individual card */
+.card-item {
+  width: 18rem; /* same as before */
+}
+
+/* Card image styling */
+.card-image {
+  object-fit: cover;
+  height: 200px;
+}
+.btn-primary {
+  background-color: #ff9900 !important;
+  border: none !important;
+}
+
+.btn-primary:hover {
+  background-color: #cc7a00 !important;
+}
