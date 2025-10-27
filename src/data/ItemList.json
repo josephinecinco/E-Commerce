@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "name": "Salmon Delight Cat Food",
+    "category": "Food",
+    "price": 15.99,
+    "stock": 120,
+    "img": "KitCat.png"
+  },
+  {
+    "id": 2,
+    "name": "Perfect Bistro Cat Food",
+    "category": "Food",
+    "price": 14.49,
+    "stock": 90,
+    "img": "PerfectBistro.png"
+  },
+  {
+    "id": 3,
+    "name": "Grain-Free Turkey Cat Food",
+    "category": "Food",
+    "price": 16.75,
+    "stock": 80,
+    "img": "Whiskas.png"
+  },
+  {
+    "id": 4,
+    "name": "Feline Health Meds - Multivitamin",
+    "category": "Meds",
+    "price": 12.75,
+    "stock": 50,
+    "img": "Sheba.png"
+  },
+  {
+    "id": 5,
+    "name": "Flea & Tick Spot-On",
+    "category": "Meds",
+    "price": 18.50,
+    "stock": 40,
+    "img": "RoyalCanin.png"
+  },
+  {
+    "id": 6,
+    "name": "Cat Ear Cleaner Solution",
+    "category": "Ear Cleaner",
+    "price": 8.99,
+    "stock": 60,
+    "img": "CreamyCatTreats.png"
+  },
+  {
+    "id": 7,
+    "name": "Crumps Cat Food",
+    "category": "Food",
+    "price": 13.50,
+    "stock": 70,
+    "img": "Crumps.png"
+  },
+  {
+    "id": 8,
+    "name": "Dailay Cat Food",
+    "category": "Food",
+    "price": 14.25,
+    "stock": 65,
+    "img": "Dailay.png"
+  },
+  {
+    "id": 9,
+    "name": "Kindful Brown Cat Food",
+    "category": "Food",
+    "price": 16.00,
+    "stock": 55,
+    "img": "KindfulBrown.png"
+  },
+  {
+    "id": 10,
+    "name": "Kindful Violet Cat Food",
+    "category": "Food",
+    "price": 16.50,
+    "stock": 50,
+    "img": "KindfullViolet.png"
+  },
+  {
+    "id": 11,
+    "name": "Oinkies Cat Treats",
+    "category": "Treats",
+    "price": 9.99,
+    "stock": 100,
+    "img": "Oinkies.png"
+  },
+  {
+    "id": 12,
+    "name": "Perfect Bistro Cat Food (Duplicate)",
+    "category": "Food",
+    "price": 14.49,
+    "stock": 90,
+    "img": "PerfectBistro.png"
+  },
+  {
+    "id": 13,
+    "name": "Spot Tango Cat Food",
+    "category": "Food",
+    "price": 15.25,
+    "stock": 75,
+    "img": "SpotTango.png"
+  },
+  {
+    "id": 14,
+    "name": "Cat Collar",
+    "category": "Accessories",
+    "price": 5.99,
+    "stock": 150,
+    "img": "Collar.png"
+  },
+  {
+    "id": 15,
+    "name": "Cat Cage",
+    "category": "Accessories",
+    "price": 45.00,
+    "stock": 20,
+    "img": "Cage.png"
+  },
+  {
+    "id": 16,
+    "name": "Cat Carrier",
+    "category": "Accessories",
+    "price": 30.00,
+    "stock": 35,
+    "img": "Carrier.png"
+  },
+  {
+    "id": 17,
+    "name": "Cat Sofa",
+    "category": "Furniture",
+    "price": 60.00,
+    "stock": 15,
+    "img": "Sofa.png"
+  },
+  {
+    "id": 18,
+    "name": "Cat Bed",
+    "category": "Furniture",
+    "price": 50.00,
+    "stock": 25,
+    "img": "Bed.png"
+  }
+]
