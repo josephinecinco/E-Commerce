@@ -1,0 +1,32 @@
+.shop-button {
+  display: block; /* makes margin auto work */
+  margin: 15px auto 0 auto; /* top margin 15px, centered horizontally */
+  background-color: #ff914d;
+  color: white;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 1.2rem;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 5px 9px rgba(0, 0, 0, 0.15);
+}
+
+.shop-button:hover {
+  background-color: #e57820;
+  transform: scale(1.05);
+}
+
+.shop-button:active {
+  background-color: #cc6600;
+  transform: scale(0.98);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .shop-button {
+    font-size: 1rem;
+    padding: 10px 25px;
+  }
+}

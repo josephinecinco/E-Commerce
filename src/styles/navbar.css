@@ -1,18 +1,19 @@
 .navbar-container {
-  position: absolute;
-  top: 10px;
-  left: 0;
-  right: 0;
+  position: relative; /* changed from absolute */
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 80px;
+  padding: 15px 80px;
   z-index: 10;
+  background: rgba(255, 255, 255, 0.8); /* optional slight transparency */
+  box-sizing: border-box;
 }
 
-
+/* Navbar links */
 .navbar {
   display: flex;
+  align-items: center;
   gap: 30px;
   background: transparent;
   font-weight: 600;
@@ -20,13 +21,19 @@
 
 .navbar a {
   text-decoration: none;
-  color: white;
+  color: rgb(55, 3, 3);
   font-size: 1.1rem;
   transition: color 0.3s ease;
 }
 
 .navbar a:hover {
-  color: #ffd28f;
+  color: #9b5d00;
+}
+
+/* Search bar in navbar */
+.navbar .search-bar {
+  margin-left: auto;
+  width: 250px;
 }
 
 /* ======= Responsive Adjustments ======= */
@@ -34,73 +41,59 @@
 /* Tablets */
 @media (max-width: 1024px) {
   .navbar-container {
-    top: 30px;
-    right: 50px;
-    gap: 20px;
-  }
-
-  .navbar {
-    gap: 25px;
+    padding: 10px 50px;
   }
 
   .navbar a {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
   }
 }
 
-/* Phones */
+/* Phones (hamburger menu phase) */
 @media (max-width: 768px) {
   .navbar-container {
-    top: 20px;
-    right: 20px;
-    flex-direction: row;
-    align-items: flex-end;
-    gap: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
   }
 
   .navbar {
-    gap: 20px;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+    display: none; /* hidden by default for hamburger */
+  }
+
+  .navbar.show {
+    display: flex; /* show when toggled */
   }
 
   .navbar a {
-    font-size: 0.8rem;
+    font-size: 1rem;
+  }
+
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: rgb(55, 3, 3);
   }
 }
 
-/* Tiny phones */
-@media (max-width: 480px) {
-  .navbar-container {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.7);
-    flex-direction: row;
-    align-items: center;
-    padding: 10px 0;
-    gap: 3px;
-  }
-
-  .navbar {
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-
-  .navbar a {
-    font-size: 0.9rem;
-  }
+/* Desktop default hides hamburger */
+.menu-toggle {
+  display: none;
 }
 
 .navbar-logo {
-  margin-top: 20px;
   height: 60px;
   width: auto;
-  max-width: 100%;
   object-fit: contain;
 }
 
-/* make it responsive */
+/* Logo scaling */
 @media (max-width: 1024px) {
   .navbar-logo {
     height: 50px;
@@ -116,6 +109,5 @@
 @media (max-width: 480px) {
   .navbar-logo {
     height: 35px;
-    width: auto;
   }
 }

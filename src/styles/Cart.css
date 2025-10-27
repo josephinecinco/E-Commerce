@@ -1,0 +1,232 @@
+.cart-container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+.cart-item-box {
+  border: 1px solid #f0a265;
+  background-color: #fffaf5;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart-item-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border: 1px solid #f0a265;
+  border-radius: 8px;
+}
+
+.cart-item-name {
+  font-weight: 600;
+  color: #333;
+}
+
+.cart-item-price {
+  color: #888;
+  margin: 5px 0;
+}
+
+.cart-quantity {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.cart-quantity button {
+  width: 30px;
+  height: 30px;
+  font-weight: 600;
+  background-color: #f0a265;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.cart-quantity button:hover {
+  background-color: #d48a42;
+  transform: scale(1.05);
+}
+
+.cart-quantity span {
+  display: inline-block;
+  min-width: 25px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.cart-total {
+  font-weight: 600;
+  color: #333;
+}
+
+.cart-summary {
+  background-color: #fffaf5;
+  border-top: 2px solid #f0a265;
+  padding: 15px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.cart-remove button {
+  background-color: #ff5c5c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  padding: 6px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.cart-remove button:hover {
+  background-color: #e13f3f;
+  transform: scale(1.05);
+}
+
+.empty-cart {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.cart-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.continue-shopping,
+.checkout-btn {
+  padding: 10px 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.continue-shopping {
+  background-color: #f0a265;
+  color: #fff;
+}
+
+.continue-shopping:hover {
+  background-color: #d48a42;
+  transform: scale(1.05);
+}
+
+.checkout-btn {
+  background-color: #5c9cff;
+  color: #fff;
+}
+
+.checkout-btn:hover {
+  background-color: #3f7fe1;
+  transform: scale(1.05);
+}
+.cart-summary {
+  background-color: #fffaf5;
+  border-top: 2px solid #f0a265;
+  padding: 15px;
+  display: flex;
+  flex-direction: column; /* stack items vertically */
+  gap: 8px; /* space between each line */
+  font-size: 16px;
+  font-weight: 600;
+  max-width: 250px; /* optional, keeps summary compact */
+}
+
+.cart-summary p {
+  display: flex;
+  justify-content: space-between; /* align label and value horizontally */
+  margin: 0; /* remove default margin */
+}
+
+.cart-summary .total {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+}
+.cart-summary {
+  display: flex;
+  flex-direction: column; /* stack vertically */
+  align-items: flex-end;   /* align amounts to the right */
+  gap: 6px;                /* vertical spacing */
+  font-size: 16px;
+  font-weight: 600;
+  background: none;        /* remove background */
+  border: none;            /* remove border */
+  padding: 0;              /* remove padding */
+}
+
+.cart-summary p {
+  display: flex;
+  justify-content: space-between; /* label left, amount right */
+  width: 100%;                    /* fill parent width */
+  margin: 0;
+}
+
+.cart-summary .total {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+}
+.cart-summary-in-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* amounts aligned right inside column */
+  gap: 4px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.cart-summary-in-column p {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%; /* fill the column */
+}
+
+.cart-summary-in-column .total {
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+}
+.cart-table {
+  width: 100%;
+  border-collapse: collapse; /* remove default gaps between cells */
+}
+
+.cart-table th,
+.cart-table td {
+  padding: 10px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.cart-table tbody tr {
+  border-bottom: 1px solid #f0a265; /* line between items */
+}
+
+.cart-table tbody tr:last-child {
+  border-bottom: none; /* optional: remove line after last item */
+}
+
+.cart-table tfoot td {
+  padding-top: 10px; /* space before totals */
+  border-top: 2px solid #f0a265; /* separates items from summary */
+}

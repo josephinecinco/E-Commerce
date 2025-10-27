@@ -8,9 +8,8 @@ body {
 }
 
 .home-page {
-  display: flex;
-  justify-content: center;
-  padding: 20px;
+  margin: auto;
+  padding: 10px 10px 0px 10px;
   flex-wrap: wrap; /* ensures content doesn’t overflow */
 }
 
