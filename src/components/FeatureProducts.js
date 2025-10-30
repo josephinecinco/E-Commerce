@@ -27,7 +27,7 @@ const FeaturedProducts = () => {
   ];
 
   const handleViewMore = () => {
-    navigate("/products"); // redirects to your ProductList page
+    navigate("/products"); 
   };
 
   return (

@@ -6,7 +6,7 @@ const Buttons = () => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate("/products"); // match the actual route in App.js
+    navigate("/products"); 
   };
 
   return (
